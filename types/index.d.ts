@@ -164,4 +164,5 @@ export type ActionType = "load" | "updateOrder" | "delete";
 
 export class ElementStore {
   static dispatch: (type: ActionType, data: any) => void;
+   static subscribe: (data: any) => void;
 }
