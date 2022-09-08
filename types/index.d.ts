@@ -118,7 +118,7 @@ export type ToolbarItem = {
 };
 
 export interface FormBuilderProps {
-  toolbarItems?: ToolbarItem[];
+  toolbarItems?: any;
   files?: any[];
   url?: string;
   showCorrectColumn?: boolean;
@@ -131,7 +131,7 @@ export interface FormBuilderProps {
   renderEditForm?: (props: BaseElement) => React.ReactNode;
 }
 
-export class ReactFormBuilder extends React.Component<FormBuilderProps> {}
+export class ReactFormBuilder extends React.Component<any> {}
 
 export interface FormGeneratorOnSubmitParams {
   name: string;
@@ -158,7 +158,7 @@ export interface FormGeneratorProps {
   variables?: Record<any, any>;
 }
 
-export class ReactFormGenerator extends React.Component<FormGeneratorProps> {}
+export class ReactFormGenerator extends React.Component<any> {}
 
 export type ActionType = "load" | "updateOrder" | "delete";
 
